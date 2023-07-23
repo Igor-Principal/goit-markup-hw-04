@@ -148,8 +148,7 @@ ul {
   padding-bottom: 188px;
 }
 .main-title {
-  padding-bottom: 48px;
-  margin: 0 auto;
+  margin: 0 auto 48px;
   max-width: 496px;
   color: #fff;
   text-align: center;
