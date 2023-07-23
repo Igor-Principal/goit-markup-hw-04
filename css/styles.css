@@ -111,12 +111,13 @@ ul {
 
 .contacts-info {
   font-style: normal;
+  display: flex;
+  align-items: center;
 }
 
 .header-contact-info {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
 }
 
 .contacts {
