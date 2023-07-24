@@ -455,10 +455,8 @@ ul {
   cursor: pointer;
   border-radius: 4px;
   transition-property: color, background, border, box-shadow;
-  transition-duration: 250ms, 250ms, 250ms, 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
-    cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1),
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-our-directions:hover,
