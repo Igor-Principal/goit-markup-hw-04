@@ -341,7 +341,23 @@ ul {
   background-color: #404bbf;
 }
 
-.media-icon {
+.link-item-media-icons-part-footer {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #f4f4fd;
+}
+
+.link-item-media-icons-part-footer:hover,
+.link-item-media-icons-part-footer:focus {
+  background-color: #31d0aa;
 }
 
 .team-text {
@@ -507,24 +523,25 @@ ul {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .products-list-items {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .products-link-items {
   display: block;
 }
 
+.products-link-items:hover,
 .products-link-items:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.products-link-items:hover .products-cover-text {
+.products-link-items:hover .products-cover-text,
+.products-link-items:focus .products-cover-text {
   transform: translateY(0%);
 }
 
@@ -580,7 +597,7 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 300ms linear;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
@@ -598,6 +615,7 @@ ul {
   margin-left: auto;
   border-radius: 50%;
   background-color: #e7e9fc;
+  fill: #2e2f42;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -609,19 +627,12 @@ ul {
 .modal-button-close:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 
 .modal-close {
-  fill: #2e2f42;
-  width: 8px;
-  height: 8px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:hover,
-.modal-close:focus{
-  fill: #ffffff
-}
-
 
 .is-hidden {
   opacity: 0;
