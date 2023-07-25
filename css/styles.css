@@ -408,12 +408,9 @@ ul {
 .box-customers-link:hover,
 .box-customers-link:focus {
   border-color: #404bbf;
-}
-
-.box-customers-link:hover .icons-customers,
-.box-customers-link:focus .icons-customers {
   color: #404bbf;
 }
+
 
 .footer {
   background-color: var(--main-color);
@@ -523,12 +520,11 @@ ul {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  
 }
 
 .products-list-items {
   width: calc((100% - 48px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .products-link-items {
@@ -536,7 +532,7 @@ ul {
 }
 
 .products-link-items:hover,
-.products-link-items:hover {
+.products-link-items:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
